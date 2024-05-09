@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="nl-be">
+    <head> 
+        <meta charset="utf-8">
+        <title>Hotel Harmoni &verbar; Boeking</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style_boeking.css">
+    </head>
+    <body>
+        <!--Header =============================================-->
+        <header id="header">
+            <div class="cotainer"> 
+                <div id="container-wrap">
+                    <div id="logo">
+                        <a href="index.html"><img src="images/logo.jpg" alt="logo" width="230"></a>
+                    </div>  
+                    <nav id="menu">
+                        <ul class="navigatie">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="kamers.html">Kamers</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav> 
+                </div>
+            </div>
+        </header>
+        <!--Main ================================================-->
+        <main>
+            <!--main-titel -->
+            <div class="main-info">
+                <div class="container">
+                    <div class="center">
+                        <h1>Boeking</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container-flex">
+                <!--reservatiesysteempje -->
+                <div id="reservatie">
+                    <div class="container">
+                        <div id="kamer"> 
+                           <p id="titel">Soort Kamer</p>
+                        </div>
+                    </div>
+                    <!--Check in & Check out kiezen -->
+                    <div class="container dagen">
+                        <div class="kleur">
+                            <div>
+                                <div class="titel">
+                                    <h2>Overzicht</h2>
+                                </div>
+                                <div class="datum-toevoegen">
+                                    <div>
+                                        <label for="inchecken">Inchecken</label><br>
+                                        <input type="date" id="inchecken" name="inchecken">
+                                    </div>
+                                    <div>
+                                        <label for="uitchecken">Uitchecken</label><br>
+                                        <input type="date" id="uitchecken" name="uitchecken">
+                                    </div>
+                                    <div>
+                                        <label for="dagen">Nachten</label><br>
+                                        <input type="text" id="dagen" name="dagen">
+                                    </div>    
+                                </div>
+                            </div>
+                            <!--Kamers en volw./kind kiezen -->                        
+                            <div class="info-text">
+                                <p>Het hotel biedt kamers voor maximaal 4 personen met een minimum van 1 volwassene.</p>
+                            </div>
+                            <div class="container-flex">
+                                <div class="pad">
+                                    <label for="kamers">Kamers:</label>
+                                    <select id="hoeveelKamers">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                                <div class="pad">
+                                    <label for="volw">Volw.:</label>
+                                    <select id="volw">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="pad">
+                                    <label for="kind">Kind:</label>
+                                    <select id="kind">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!--Extra services -->
+                            <div class="services">
+                                <div>
+                                    <p>Extra services</p>
+                                </div>
+                                <div>
+                                    <input type="radio" id="ontbijt" name="ontbijt">
+                                    <label for="ontbijt">Ontbijt: 5&euro;</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="halfpension" name="halfpension">
+                                    <label for="halfpension">Halfpension: 10&euro;</label>
+                                </div>  
+                                        
+                            </div>
+                            <!--Kortingscode -->
+                            <div class="korting">
+                                <label for="kortingscode">Kortingscode:</label><br>
+                                <input type="text" id="kortingscode" name="kortingscode"> 
+                                <button id="controleren">Controleren</button>
+                            </div>
+                            <!--Totaalprijs -->
+                            <table>
+                                <tr>
+                                    <td>Nachten<span id="totNachten"></span></td>
+                                    <td><span id="nachtPrijs">0</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kamers<span id="totKamers"></span></td>
+                                    <td><span id="kamerPrijs"></span> </td>
+                                </tr>
+                                <tr>
+                                    <td>Extra services</td>
+                                    <td><span id="servicesPrijs"></span></td>
+                                </tr>
+                                <tr>
+                                    <td>Korting</td>
+                                    <td><span id="kortingPrijs"></span></td>
+                                </tr>
+                            </table>
+                            <div class="prijs">
+                                <h3>Totale prijs:</h3>
+                                <p><span id="prijs"></span> &euro;</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Gegevens invullen -->
+                <div class="gegevens">
+                    <div class="cotainer">
+                        <h2>Vul je gegevens in:</h2>
+                        <form id="forms">
+                            <div class="row">
+                                <div>
+                                    <label for="voornaam">Voornaam <small>*</small></label><br>
+                                    <input type="text" id="voornaam" name="voornaam" required>
+                                </div>
+                                <div>
+                                    <label for="achternaam">Achternaam <small>*</small></label><br>
+                                    <input type="text" id="achternaam" name="achternaam" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <label for="email">Email <small>*</small></label><br>
+                                    <input type="text" id="email" name="email" required>
+                                </div>
+                                <div>
+                                    <label for="telefoon">Telefoon/GSM <small>*</small></label><br>
+                                    <input type="text" id="telefoon" name="telefoon" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <label for="adres">Adres <small>*</small></label><br>
+                                    <input type="text" id="adres" name="adres" required>
+                                </div>
+                                <div>
+                                    <label for="stad">Stad <small>*</small></label><br>
+                                    <input type="text" id="stad" name="stad" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div>
+                                    <label for="land">Land <small>*</small></label><br>
+                                    <input type="text" id="land" name="land" required>
+                                </div>
+                                <div>
+                                    <label for="zip">ZIP <small>*</small></label><br>
+                                    <input type="number" id="zip" name="zip" required>
+                                </div>
+                            </div>
+                            <div>
+                                <input type="submit" id="uitcheck" name="uitcheck" value="Reserveren">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+                 <!--Footer ================================================-->
+        <footer>
+            <div class="container footer-flex">
+                <div class="over">
+                    <h3>Over Hotel Harmonie</h3>
+                    <p>Hotel Harmonie is de juiste keuze voor bezoekers die op zoek zijn naar een combinatie van charme en een gunstige ligging om de omgeving te verkennen.</p>
+                </div>
+                <div class="contact">
+                    <h3>Contacten</h3>
+                    <address><i class="fas fa-map-marked-alt"></i> Kraanlei 37, 9000 Gent</address>
+                    <p><a href="mailto:info@harmonie.be">Email: info@harmonie.be</a></p>
+                    <p>Telefoon: 0498 76 67 44</p>
+                    <ul class="social">
+                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-pinterest-square"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Site Links</h3>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="kamers.html">Kamers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Geaccepteerde betalingsmethoden</h3>
+                    <ul class="betalingsmethoden">
+                        <li><i class="fab fa-paypal"></i></li>
+                        <li><i class="fab fa-cc-visa"></i></li>
+                        <li><i class="fab fa-cc-mastercard"></i></li>
+                        <li><i class="fab fa-cc-amex"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container footer-copyright">
+                <p>Copyright &copy; 2020</p>
+            </div>
+        </footer>  
+        <script src="javascript/script_boeking.js"></script>         
+    </body>
+</html>

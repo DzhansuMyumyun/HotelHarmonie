@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="nl-be">
+    <head> 
+        <meta charset="utf-8">
+        <title>Hotel Harmoni &verbar;Contact</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style_contact.css">
+    </head>
+    <body>
+        <!--Header =============================================-->
+        <header id="header">
+            <div class="cotainer"> 
+                <div id="container-wrap">
+                    <div id="logo">
+                        <a href="index.html"><img src="images/logo.jpg" alt="logo" width="230"></a>
+                    </div>  
+                    <nav id="menu">
+                        <ul class="navigatie">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="kamers.html">Kamers</a></li>
+                            <li><a href="contact.html" class="active">Contact</a></li>
+                        </ul>
+                    </nav> 
+                </div>
+            </div>
+        </header>
+        <!--Main ================================================-->
+        <main>
+            <!--main titel -->
+            <div class="main-info">
+                <div class="container">
+                    <div class="center">
+                        <h1>Contact</h1>
+                    </div>
+                </div>
+            </div>
+            <!--main contact info -->
+            <div class="container">
+                <!--main contact form -->
+                <div class="flex-container">
+                    <div class="contacten">
+                        <h2>Contacteer ons</h2>
+                        <form>
+                            <div class="contact">
+                                <label for="voornaam">Voornaam <small>*</small></label><br>
+                                <input type="text" id="voornaam" name="voornaam" required>
+                            </div>
+                            <div class="contact">
+                                <label for="achternaam">Achternaam <small>*</small></label><br>
+                                <input type="text" id="achternaam" name="achternaam" required>
+                            </div>
+                            <div class="contact">
+                                <label for="email">Email <small>*</small></label><br>
+                                <input type="text" id="email" name="email" required>
+                            </div>
+                            <div class="contact">
+                                <label for="telefoon">Telefoon/GSM <small>*</small></label><br>
+                                <input type="text" id="telefoon" name="telefoon" required>
+                            </div>
+                            <div class="contact">
+                                <label for="onderwerp">Onderwerp <small>*</small></label><br>
+                                <input type="text" id="onderwerp" name="onderwerp" required>
+                            </div>
+                            <div class="contact">
+                                <label for="boodschap">Boodschap <small>*</small></label><br>
+                                <textarea  id="boodschap" name="boodschap" required></textarea>
+                            </div>
+                            <div>
+                                <input type="submit" id="verzenden" name="verzenden" value="Verzenden">
+                            </div>
+                        </form> 
+                    </div>
+                    <!--kaart -->
+                    <div class="locatie">
+                        <h2>Kaart</h2>
+                        <div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.780911397282!2d3.7206009153072483!3d51.05713307956367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c371475da9c32b%3A0x9590537cd77ac222!2sKraanlei%2037%2C%209000%20Gent!5e0!3m2!1snl!2sbe!4v1604299011240!5m2!1snl!2sbe" class="kaart" width="600" height="450"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                </div>                 
+            </div>
+        </main>
+        <!--Footer ================================================-->
+        <footer>
+            <div class="container footer-flex">
+                <div class="over">
+                    <h3>Over Hotel Harmonie</h3>
+                    <p>Hotel Harmonie is de juiste keuze voor bezoekers die op zoek zijn naar een combinatie van charme en een gunstige ligging om de omgeving te verkennen.</p>
+                </div>
+                <div class="contact">
+                    <h3>Contacten</h3>
+                    <address><i class="fas fa-map-marked-alt"></i> Kraanlei 37, 9000 Gent</address>
+                    <p><a href="mailto:info@harmonie.be">Email: info@harmonie.be</a></p>
+                    <p>Telefoon: 0498 76 67 44</p>
+                    <ul class="social">
+                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-pinterest-square"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Site Links</h3>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="kamers.html">Kamers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Geaccepteerde betalingsmethoden</h3>
+                    <ul class="betalingsmethoden">
+                        <li><i class="fab fa-paypal"></i></li>
+                        <li><i class="fab fa-cc-visa"></i></li>
+                        <li><i class="fab fa-cc-mastercard"></i></li>
+                        <li><i class="fab fa-cc-amex"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container footer-copyright">
+                <p>Copyright &copy;2020</p>
+            </div>
+            <script src="javascript/script_contact.js"></script>
+        </footer>            
+    </body>
+</html>

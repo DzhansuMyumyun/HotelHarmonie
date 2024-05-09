@@ -1,0 +1,977 @@
+/*---------------------------------
+    Body
+
+    KLEUREN
+    - #0F1626 = zwart
+    - #AB987A = bruin
+    - FF533D = oranje
+    - #F5F5F5 = wit
+
+    FONT-FAMILY
+    - 'Lato', sans-serif;
+    -  Raleway, sans-serif;
+    - 'Lucida Calligraphy', sans-serif;
+    - 'Edwardian Script ITC', sans-serif;
+
+----------------------------------*/
+body{
+    background: #F5F5F5;
+    margin: 0px;
+    padding: 0px;
+}
+
+*{
+    box-sizing: border-box;   
+}
+
+.container{
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#container-end{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3em;
+}
+
+h1{
+    font-family: 'Lucida Calligraphy', sans-serif;
+    color: #F5F5F5;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+h2, h3, h4, p, a{
+    color: #0F1626;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+}
+
+.flex{
+    display: flex;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #F5F5F5;
+    background: #AB987A;
+}
+  
+::selection {
+    color: #F5F5F5;
+    background: #AB987A;
+}
+
+.active{
+    color: #AB987A;
+}
+
+
+/*---------------------------------
+    Header
+----------------------------------*/
+#header{
+    border-bottom: 1px solid #ab987a18;
+}
+
+#logo{
+    position: relative;
+    padding-top: 0.5em;
+}
+
+.navigatie{
+    justify-content: flex-end;
+    padding-right: 5em;
+    padding-left: 2em;
+    margin-left: 6em;
+}
+
+header li{
+    list-style: none;
+    padding-left: 1em;  
+}
+
+#menu{
+    padding-right: 3em;
+}
+
+header a{
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #0F1626;
+}
+
+li a:hover{
+    color: #AB987A;
+}
+
+/*---------------------------------
+    Main-info
+----------------------------------*/
+.main-info{
+    background-image: url(../images/hotel.jpg); /*https://edition.cnn.com/travel/article/emirates-palace-gold-abu-dhabi/index.html*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    max-width: 100%;
+    height: 31em;
+
+}
+
+.content-space{
+    display: flex;
+    justify-content: space-between;   
+    height: 20em;
+    align-items: flex-end;
+}
+
+.covid a{
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 0.85em;
+    color: #0F1626;
+    border: 2px solid #F5F5F5;
+    background-color: #f5f5f5;
+    transition: 1s;
+}
+
+.covid{
+    margin-top: 3.64em;
+}
+.covid:hover a{
+    color: #FF533D;
+    background-color: #F5F5F5;
+    padding: 1em 2em;
+}
+
+p{
+    padding-left: 0.7em;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container-weer{
+    background-color: #F5F5F5;
+    color: #AB987A;
+    padding: 0.5em;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+
+.date{
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.7em;  
+    color: #0F1626; 
+    font-weight: bold;
+}
+
+.flex-weer{
+    display: flex;
+    justify-content: center;
+}
+
+#temp{
+    font-size: 1.2em;
+    color: #0F1626;
+    font-weight: bold;
+}
+
+#weather{
+    padding-top: 0em;
+    margin-top: 0em;
+    text-align: center;
+    font-style: italic;
+}
+
+.hi-low{
+    text-align: center;
+    color: #0F1626;
+}
+
+
+/*---------------------------------
+    Main-hotel
+----------------------------------*/
+.sfeerfoto1 img{
+    max-width: 100%;
+    margin-top: 2em;
+    height: 17em;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.sfeerfoto2 img{
+    max-width: 100%;
+    margin-top: 15em;
+    height: 10em;
+    position: relative;
+    margin-left: 14em;
+    border-radius: 5px;
+}
+ 
+.hotel-info{
+    display: flex;
+    margin-bottom: 3em;
+}
+
+.text-info{
+    margin-top: 3em;
+    margin-left: 18em;
+}
+
+.decor{
+    font-size: 14px;
+}
+
+.text{
+    margin-left: 5em;
+    line-height: 1.75;
+}
+
+/*---------------------------------
+    Main-voorzieningen
+----------------------------------*/
+.voorzieningen-foto img{
+    max-width: 100%;
+    margin-top: 3em;
+    width: 100em;
+    height: 17em;
+    border-radius: 5px;
+}
+
+.voorzieningen{
+    background-color: #F5F5F5;
+    height: 15em;
+    display: block;
+    margin-right: 10em;
+    padding: 1em;
+}
+
+.voorzieningen p{
+    line-height: 1.6;
+}
+
+.voorz p{
+    margin-top:0px;
+    padding-left: 1em;
+}
+
+.voorz{
+    display: flex;
+}
+
+/*---------------------------------
+    Main-ruimtes eten
+----------------------------------*/
+.ruimtes-eten{
+    justify-content: center;
+}
+
+figure{
+    margin: 0.4em;   
+}
+
+figure.afbeelding{
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: #0F1626;
+  text-align: center;
+  border-radius: 5px;
+}
+
+figure.afbeelding img{
+    height: 14em;
+    width: 100%;
+}
+
+figure.afbeelding * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+figure.afbeelding img {
+  opacity: 1;
+  max-width: 100%;
+  background-size: cover;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+figure.afbeelding figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 3em 3em;
+  width: 100%;
+  height: 100%;
+}
+
+figure.afbeelding figcaption::before {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  bottom: 50%;
+  left: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  content: '';
+  opacity: 0;
+  background-color: #ffffff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+figure.afbeelding h3,
+figure.afbeelding p {
+  margin: 0 0 5px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
+}
+
+figure.afbeelding h3{
+  word-spacing: -0.15em;
+  font-weight: 300;
+  -webkit-transform: translate3d(0%, 50%, 0);
+  transform: translate3d(0%, 50%, 0);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  color: #F5F5F5;
+}
+
+figure.afbeelding h3{
+  font-weight: 400;
+  padding-top: 2em;
+}
+
+figure.afbeelding p {
+  font-weight: 200;
+  padding-top: 1em;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  color: #F5F5F5;
+}
+
+
+figure.afbeelding:hover img {
+  opacity: 0.35;
+}
+
+figure.afbeelding:hover figcaption h3 {
+  opacity: 1;
+  -webkit-transform: translate3d(0%, 0%, 0);
+  transform: translate3d(0%, 0%, 0);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+figure.afbeelding:hover figcaption p {
+  opacity: 0.9;
+  -webkit-transition-delay: 0.6s;
+  transition-delay: 0.6s;
+}
+
+figure.afbeelding:hover figcaption::before {
+  background: #0f1626ad;
+  top: 30px;
+  bottom: 30px; 
+  opacity: 1;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+/*---------------------------------
+    Footer
+----------------------------------*/
+footer{
+    border-top: 1px solid #ab987a18;
+    margin-top: 5em;
+    padding-top: 3em;
+    background-color: #ab987a5e;
+
+}
+
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-flex ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-flex li{
+    list-style: none;      
+}
+
+footer p{
+    font-size: 14px;
+}
+
+.social, .betalingsmethoden{
+    display: flex;  
+    justify-content: center;
+}
+
+.social li, .betalingsmethoden li{
+    padding-right: 1em;
+    font-size: 1.3em;
+}
+
+.links li{
+    padding-bottom: 1em;
+}
+
+
+footer a{
+    text-decoration: none;
+    color: #0F1626;   
+}
+
+.footer-copyright{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ab987a18;
+    margin-top: 2em;
+    background-color: #ab987a63;
+}
+
+address{
+    font-style: normal;
+    line-height: inherit;
+    font-family: 'Raleway', sans-serif;;
+}
+
+.over{
+    width: 15em;
+}
+
+
+/*---------------------------------
+    Media query 280px
+----------------------------------*/
+@media (min-width: 280px){
+    .container{
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+
+    #container-end{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0em;
+        padding-bottom: 0em;
+        padding-left: 0em;
+    }
+
+    .navigatie{
+        display: flex;
+        align-items: center;
+        padding-right: 0em;
+        padding-left: 0em;
+        margin-left: 0em;
+    }
+
+    #logo{
+        padding-right: 0em;
+        padding-top: 0.5em;   
+    }
+
+    #menu{
+        padding-right: 0em;
+    }
+
+    .content-space{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    
+    }
+    
+    .covid{
+        margin-top: 15em;    
+    }
+
+  
+    h1{
+        font-size: 2em;
+        padding-top: 0.3em;
+        margin-bottom: 0em;
+    }
+
+    
+    .container-weer{
+        margin-top: 2em;
+    }
+
+    p{
+       font-size: 0.8em;
+        padding-left: 0.3em;
+    }
+
+    .hotel-info{
+        flex-direction: column;
+        margin-bottom: 0em;
+    }
+
+    .text-info{
+        margin-left: 1em;
+    }
+
+    .text{
+        margin-left: 2em;
+    }
+
+    .sfeerfoto1 img{
+        height: 10em;
+    }
+    
+    .sfeerfoto2 img{
+        height: 5em;
+        margin-left: 6em;
+        margin-top: 9em;
+    }
+
+    figure.afbeelding h3{
+        font-weight: 300;
+        padding-top: 0em;
+        font-size: 13px;
+    }
+
+    figure.afbeelding p{
+        font-size: 10px;
+        padding-top: 0em;
+    }
+
+    .ruimtes-eten{
+        display: flex;
+        flex-direction: column;
+    }
+
+    figure.afbeelding img{
+        height: 10em;
+        width: 100em;
+    }
+
+    .voorzieningen-foto img{
+        max-width: 100%;
+        margin-top: 2em;
+        margin-bottom: 2em;
+        display: inline-block;
+        height: 10em;
+        border-radius: 5px;
+    }
+
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .voorzieningen{
+        background-color: #F5F5F5;
+        height: 21em;
+        display: inline;
+        margin-right: 1em;
+        padding: 1em;
+    }
+    
+    .voorz p{
+        margin-top:0px;
+        padding-left: 1em;
+    }
+
+    .footer-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+}
+
+/*---------------------------------
+    Media query 360px
+----------------------------------*/
+@media (min-width: 360px){
+    .container{
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+
+    .content-space{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+    }
+
+    .container-weer{
+        margin-top: 1em;
+    }
+
+    .sfeerfoto1 img{
+        height: 12em;
+    }
+    
+    .sfeerfoto2 img{
+        height: 5em;
+        margin-left: 9em;
+        margin-top: 10em;
+        box-shadow: 1px 1px 10px 10px #F5F5F5;
+
+    }
+
+    .voorzieningen-foto img{
+        width: 100%;
+        margin-top: 0em;
+        margin-bottom: 2em;
+        display: inline-block;
+        height: 10em;
+        border-radius: 5px;
+    }
+    
+    .voorzieningen{
+        height: 22em;
+    }
+
+    figure.afbeelding img{
+        height: 10em;
+        width: 100%;
+    }
+
+    figure.afbeelding{
+        width: auto;
+    }
+
+}
+
+/*---------------------------------
+    Media query 540px
+----------------------------------*/
+@media (min-width: 540px){
+    .voorzieningen-foto img{
+        margin-top: 3em;
+        margin-bottom: 2em;
+        margin-left: 4em;
+        display: inline-block;
+        height: 13em;
+        border-radius: 5px;
+        width: 20em;
+    }
+
+    .voorzieningen{
+        height: 17em;
+    }
+
+    figure.afbeelding img{
+        height: 10em;
+        width: 20em;
+    }
+
+    figure.afbeelding{
+        width: 20em;
+        margin-left: 4em;
+    }
+}
+
+/*---------------------------------
+    Media query 576px
+----------------------------------*/
+@media (min-width: 576px){
+
+    .container{
+        padding-right: 3.5em;
+        padding-left: 3.5em;
+    }
+
+    #container-end{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 3.5em;
+        margin-right: 3.5em;
+    }
+    .content-space{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    .covid{
+        margin-top: 4.7em;    
+    }
+
+    h1{
+        font-size: 3.5em;
+        padding-left: 0em;
+    }
+
+    p{
+       font-size: 0.8em;
+        padding-left: 0.3em;
+    }
+
+    .hotel-info{
+        flex-direction: row;
+    }
+
+    .text-info{
+        margin-left: 9em;
+    }
+
+    .text{
+        margin-left: 2em;
+    }
+
+    .sfeerfoto1 img{
+        height: 10em;
+        margin-top: 8em;
+    }
+    
+    .sfeerfoto2 img{
+        height: 5em;
+        margin-left: 7.5em;
+        margin-top: 15em;
+    }
+
+    .ruimtes-eten{
+        display: flex;
+        flex-direction: row;
+    }
+
+    figure.afbeelding img{
+        height: 10em;
+        width: 100em;
+    }
+
+    .voorzieningen-foto img{
+        margin-top: 8em;
+        margin-bottom: 2em;
+        display: inline-block;
+        height: 10em;
+        border-radius: 5px;
+    }
+
+    .flex{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .voorzieningen{
+        height: 27em;
+        display: inline;
+        margin-right: 1em;
+        padding: 1em;
+    }
+    
+    .voorz p{
+        margin-top:0px;
+        padding-left: 1em;
+    }
+
+    .footer-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+/*---------------------------------
+    Media query 768px
+----------------------------------*/
+@media (min-width: 768px){
+    .content-space{
+        display: flex;
+        justify-content: space-between;   
+        height: 20em;
+        align-items: flex-end;
+    }    
+    .voorzieningen-foto img{
+        width: 50em;
+        margin-top: 5em;
+        margin-bottom: 2em;
+        margin-left: 0em;
+        display: inline-block;
+        height: 11em;
+        border-radius: 5px;
+    }
+
+    .voorzieningen{
+        height: 20em;
+    }
+
+    .sfeerfoto1 img{
+        height: 12em;
+        margin-top: 4em;
+    }
+    
+    .sfeerfoto2 img{
+        height: 5em;
+        margin-left: 10em;
+        margin-top: 13em;
+    }
+
+    h1{
+        padding: 0em;
+        text-align: center;
+        padding-left: 3.4em;
+        font-size: 1.8em;
+        padding-top: 0.1em;
+        margin-bottom: 3em;
+    }
+
+    figure.afbeelding h3{
+        font-weight: 300;
+        padding-top: 0em;
+        font-size: 10px;
+    }
+
+    figure.afbeelding p{
+        font-size: 8.5px;
+        padding-top: 0em;
+    }
+
+    figure.afbeelding{
+        width: 100%;
+        margin-left: 0em;
+    }
+
+    .footer-flex{
+        flex-direction: column;
+    }
+
+    .over{
+        width: 100%;
+    }
+
+    .social, .betalingsmethoden{
+        justify-content: start;
+    }
+
+}
+
+
+/*---------------------------------
+    Media query 992px
+----------------------------------*/
+@media (min-width: 992px){
+    h1{
+        font-size: 2em;
+        margin-bottom: 3em;
+        margin-top: 0.3em;
+        text-align: center;
+        padding-left: 0.4em;
+        padding-top: 0.4em;
+    }
+    .container{
+        padding-right: 6em;
+        padding-left: 6em;
+    }
+
+    #container-end{
+        padding-left: 3em;
+    }
+
+    #menu{
+        padding-right: 3em;
+    }
+    
+    /*Main-hotel*/
+    .sfeerfoto1 img{
+        max-width: 100%;
+        margin-top: 2em;
+        height: 18em;
+    }
+    
+    .sfeerfoto2 img{
+        max-width: 100%;
+        margin-top: 13em;
+        height: 10em;
+        margin-left: 16em;
+        box-shadow: 1px 1px 10px 10px #F5F5F5;
+    }
+       
+    .text-info{
+        margin-top: 3em;
+        margin-left: 18em;
+    }
+    
+    .text{
+        margin-left: 5em;
+        line-height: 1.75;
+    }
+    
+    /*Main-voorzieningen*/
+    
+    .voorzieningen-foto img{
+        max-width: 100%;
+        margin-top: 3em;
+        margin-left: 0em;
+        width: 60em;
+        height: 17em; 
+    } 
+
+    .voorzieningen{
+        margin-bottom: 5em;
+    }
+
+ 
+
+    /*Main-ruimtes eten*/
+    
+    figure.afbeelding img{
+        height: 14em;
+        width: 100%;
+    }
+        
+    figure.afbeelding h3{
+      font-weight: 350;
+      padding-top: 0em;
+      font-size: 1em;
+    }
+
+    figure.afbeelding p{
+        font-size: 0.8em; 
+        text-align: center;   
+        padding-top: 5px;      
+    }
+
+    figure.afbeelding{
+        margin-left: 1em;
+        
+    }
+
+    p{
+        font-size: 1em;
+    }
+
+    .over{
+        width: 20em;
+    }
+
+    .footer-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .social, .betalingsmethoden{
+        justify-content: center;
+    }
+
+}

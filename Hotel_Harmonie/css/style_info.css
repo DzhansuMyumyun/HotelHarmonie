@@ -1,0 +1,900 @@
+/*---------------------------------
+    Body
+
+    KLEUREN
+    - #0F1626 = zwart
+    - #AB987A = bruin
+    - FF533D = oranje
+    - #F5F5F5 = wit
+
+    FONT-FAMILY
+    - 'Lato', sans-serif;
+    -  Raleway, sans-serif;
+    - 'Lucida Calligraphy', sans-serif;
+    - 'Edwardian Script ITC', sans-serif;
+
+----------------------------------*/
+body{
+    background: #F5F5F5;
+    margin: 0px;
+    padding: 0px;
+}
+
+*{
+    box-sizing: border-box;   
+}
+
+.container{
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#container-wrap{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 3em;
+}
+
+h1{
+    font-family: 'Lucida Calligraphy', sans-serif;    
+    color: #F5F5F5;
+    padding: 0.5em 0em;
+    margin: 0.3em 0em;
+}
+
+h2, h3, h4, p, a{
+    color: #0F1626;
+    font-family: "Raleway", sans-serif;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+}
+
+.flex{
+    display: flex;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #F5F5F5;
+    background: #AB987A;
+}
+  
+::selection {
+    color: #F5F5F5;
+    background: #AB987A;
+}
+
+/*---------------------------------
+    Header
+----------------------------------*/
+#header{
+    border-bottom: 1px solid #ab987a18;
+}
+
+#logo{
+    position: relative;
+    padding-top: 0.5em;
+}
+
+.navigatie{
+    justify-content: flex-end;
+    padding-right: 5em;
+    padding-left: 2em;
+    margin-left: 6em;
+}
+
+header li{
+    list-style: none;
+    padding-left: 1em;  
+}
+
+#menu{
+    padding-right: 3em;
+}
+
+header a{
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #0F1626;
+}
+
+li a:hover{
+    color: #AB987A;
+}
+/*---------------------------------
+    Main-info
+----------------------------------*/
+.main-info{
+    background-image: url(../images/room1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    max-width: 100%;
+    height: 20em;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    padding-top: 6em;
+}
+
+/*-------------------------------------
+    Main kamer-afbeeldingen & kalender
+---------------------------------------*/
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.meer-fotos{
+    background-image: url(../images/room1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%; 
+    width: 50em;
+    height: 25em;
+    padding-left: 6em; 
+}
+
+.text p{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+
+.services{
+    display: flex;
+    justify-content: space-between;
+}
+
+.services li, .services span{
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    line-height: 2em;
+}
+
+.fotos{
+    display: flex;
+    justify-content: center;
+}
+
+.fotos img{
+    width: 8em;
+    margin: 0.5em;
+    
+}
+
+.foto1{
+    background-image: url(images/room.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*-------------------------------------
+    kalender
+---------------------------------------*/
+
+.container2 {
+    width: 100%;
+    height: 23em;
+    background-color: #F5F5F5;
+    color: #AB987A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar {
+    width: 26rem;
+    height: 19.5rem;
+    margin-left: 1em;
+    background-color: #F5F5F5;
+    border: solid 1px #AB987A;
+}
+
+.month{
+    width: 100%;
+    height: 5rem;
+    background-color: #ab987ad2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+    text-shadow: 0 0.3rem 0.5rem #f5f5f57e;
+}
+
+.month i {
+    font-size: 2em;
+    color: #F5F5F5;
+    cursor: pointer;
+}
+
+.month h2{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+    color: #F5F5F5;
+}
+
+.month p {
+    font-size: 0.8em;
+    color: #F5F5F5;
+}
+
+.weekdays {
+    width: 100%;
+    height: 3em;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .weekdays div {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    width: calc(25rem / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+  }
+
+  .days div {
+    font-size: 1em;
+    width: calc(25rem / 7);
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+  }
+
+  .days div:hover:not(.today) {
+    background-color: #ab987a4f;
+    border: 0.2rem solid #AB987A;
+    cursor: pointer;
+  }
+
+.prev-date,
+.next-date{
+  opacity: 0.5;
+}
+
+.today {
+  background-color: #AB987A;
+  color: #F5F5F5; 
+}
+
+.niet{
+    background-color: #FF533D;
+    color: #F5F5F5;
+}
+
+
+
+.boeking{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5em;
+}
+
+.boeking a{
+    padding: 1em 3em;
+    width: 10em;
+    text-decoration: none;
+    display: inline-block;
+    color: #F5F5F5;
+    background-color: #AB987A;
+    transition-duration: 1s; 
+    margin-top: 1em;
+}
+
+.boeking{
+    font-size: 0.9em;
+}
+
+.boeking a:hover{
+    background-color: #ab987a93;
+}
+
+
+#prijs{
+    font-size: 2em;
+}
+
+
+
+/*---------------------------------
+    Footer
+----------------------------------*/
+footer{
+    border-top: 1px solid #ab987a18;
+    margin-top: 5em;
+    padding-top: 3em;
+    background-color: #ab987a5e;
+}
+
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-flex ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-flex li{
+    list-style: none;      
+}
+
+.social, .betalingsmethoden{
+    display: flex;
+    justify-content: center;
+}
+
+.social li, .betalingsmethoden li{
+    padding-right: 1em;
+    font-size: 1.3em;
+}
+
+.links li{
+    padding-bottom: 1em;
+} 
+
+
+footer a{
+    text-decoration: none;
+    color: #0F1626;   
+}
+
+.footer-copyright{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ab987a18;
+    margin-top: 2em;
+    background-color: #ab987a63;
+}
+
+address{
+    font-style: normal;
+    line-height: inherit;
+    font-family: 'Raleway', sans-serif;;
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------
+    Media query 280px
+----------------------------------*/
+@media (min-width: 280px){
+    .container{
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+
+    #container-wrap{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0em;
+        padding-bottom: 0em;
+        padding-left: 0em;
+    }
+
+    .navigatie{
+        display: flex;
+        align-items: center;
+        padding-right: 0em;
+        padding-left: 0em;
+        margin-left: 0em;
+    }
+
+    #logo{
+        padding-right: 0em;
+        padding-top: 0.5em;   
+    }
+
+    #menu{
+        padding-right: 0em;
+    }
+
+    .content-space{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .covid{
+        margin-top: 15em;    
+    }
+
+  
+    h1{
+        font-size: 1.3em;
+    }
+
+    #header{
+        margin-bottom: 1em;
+        border-bottom: 1px solid #ab987a18;
+    }
+    /*-------Main-fotos--------------*/
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+       
+    .services{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .main-foto img{
+        width: 100%;
+        height: 10em;
+    }
+
+    .fotos{
+        display: flex;
+        justify-content: center;
+        
+    } 
+
+    .fotos img{
+        width: 3em;
+        margin: 0.5em;
+        height: 2em;
+        border-radius: 5px;
+    }
+    
+    .fotos img:hover{
+        opacity: 0.6;
+        border-radius: 5px;
+    }
+    
+  /*-------Kalender--------------*/
+    
+    .calendar {
+        width:auto;
+        height: 19.5rem;
+        margin-left: 0em;
+    }
+   
+    .month h2{
+        font-size: 0.7em;
+
+    }
+    
+    .weekdays {
+        width: 100%;
+        height: 3em;
+        padding: 0 0.4rem;
+        display: flex;
+        align-items: center;
+      }
+    
+      .weekdays div {
+        font-size: 1rem;
+        width: calc(14rem / 7);
+ 
+      }
+    
+      .days div {
+        font-size: 1em;
+        width: calc(14rem / 7);
+      }
+    /*-------Footer--------------*/
+    .footer-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer{
+        margin-top: 4em;
+    }
+
+    
+    
+
+    
+}
+/*---------------------------------
+    Media query 320px
+----------------------------------*/
+@media (min-width: 320px){
+
+    .container{
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+
+    .content-space{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+    }
+
+    .weekdays div {
+        font-size: 1rem;
+        width: calc(17rem / 7);
+ 
+    }
+    
+    .days div {
+    font-size: 1em;
+    width: calc(17rem / 7);
+    }
+
+}
+
+/*---------------------------------
+    Media query 360px
+----------------------------------*/
+@media (min-width: 360px){
+    .container{
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    .content-space{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+
+    /*-------Main-fotos--------------*/
+    .main-foto img{
+        width: 100%;
+        height: 12em;
+    }
+    .fotos{
+        display: flex;
+        justify-content: center;
+        
+    } 
+ 
+    .fotos img{
+        width: 3em;
+        margin: 0.5em;
+        height: 2em;
+    }
+    
+    .fotos img:hover{
+        opacity: 0.6;
+    }
+    /*-------Kalender--------------*/  
+    .month h2{
+        font-size: 1em;
+
+    }
+    
+      .weekdays div {
+        font-size: 1rem;
+        width: calc(19rem / 7);
+ 
+      }
+    
+      .days div {
+        font-size: 1em;
+        width: calc(19rem / 7);
+      }
+
+
+}
+
+/*---------------------------------
+    Media query 540px
+----------------------------------*/
+@media (min-width: 540px){
+    .container{
+        padding-right: 3.5em;
+        padding-left: 3.5em;
+    }
+
+    #container-wrap{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 3.5em;
+        margin-right: 3.5em;
+    }
+    .content-space{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    .covid{
+        margin-top: 4.7em;    
+    }
+
+    h1{
+        font-size: 2em;
+    }
+    .weekdays div {
+        font-size: 1rem;
+        width: calc(26rem / 7);
+ 
+      }
+    
+      .days div {
+        font-size: 1em;
+        width: calc(26rem / 7);
+      }
+      .text{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/*---------------------------------
+    Media query 768px
+----------------------------------*/
+@media (min-width: 768px){
+    .container{
+        padding-right: 3em;
+        padding-left: 3em;
+    }
+    .content-space{
+        display: flex;
+        justify-content: space-between;   
+        height: 20em;
+        align-items: flex-end;
+    } 
+
+    /*-------Main-fotos--------------*/
+    .flex-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+       
+    .services{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .main-foto img{
+        width: 23em;
+        height: 16em;
+    }
+
+    .fotos{
+        display: flex;
+        justify-content: center;
+    } 
+
+    .fotos img{
+        width: 3.5em;
+        margin: 0.5em;
+    }
+    
+    
+  /*-------Kalender--------------*/
+    .calendar{
+        margin-left: 1em;
+        margin-bottom:1em ;
+    }
+    .container2{
+        height: 19.4em;
+    }
+
+    .month h2{
+        font-size: 1em;
+    }  
+
+      .weekdays div {
+        font-size: 1rem;
+        width: calc(18rem / 7);
+      }
+    
+      .days div {
+        font-size: 1em;
+        width: calc(18rem / 7);
+      }
+    /*-------Footer--------------*/
+
+    
+    .footer-flex{
+        flex-direction: column;
+    }
+
+    .over{
+        width: 100%;
+    }
+
+    .social, .betalingsmethoden{
+        justify-content: start;
+    }
+
+}
+
+/*---------------------------------
+    Media query 992px
+----------------------------------*/
+@media (min-width: 992px){
+    .container{
+        padding-right: 6em;
+        padding-left: 6em;
+    }
+
+    #container-wrap{
+        padding-left: 3em;
+    }
+
+    #menu{
+        padding-right: 3em;
+    }
+
+    h1{
+        margin-top: 3.5em;
+        font-size: 2.3em;
+    }
+
+    .text{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    /*-------Main-fotos--------------*/
+
+    .services{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .main-foto img{
+        width: 30em;
+        height: 20em;
+        border-radius: 5px;
+    }
+
+    .fotos{
+        display: flex;
+        justify-content: center;
+        width: 30em;
+    } 
+
+    .fotos img{
+        width: 7.1em;
+        margin: 0.2em;
+        height: 5em;
+        border-radius: 5px;
+    }
+
+    .fotos img:hover{
+        opacity: 0.6;
+    }
+    
+    
+  /*-------Kalender--------------*/
+    .calendar{
+        margin-left: 1em;
+        margin-bottom:1em ;
+        border-radius: 5px;
+
+    }
+    .container2{
+        height: 20em;
+    }
+
+    .month h2{
+        font-size: 1em;
+    }  
+
+    .weekdays div {
+    font-size: 1rem;
+    width: calc(20rem / 7);
+    }
+
+    .days div {
+    font-size: 1em;
+    width: calc(20rem / 7);
+    }
+
+    .over{
+        width: 20em;
+    }
+
+    .footer-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .social, .betalingsmethoden{
+        justify-content: center;
+    }
+
+}
+
+/*---------------------------------
+    Media query 1200px
+----------------------------------*/
+@media (min-width: 1200px){
+    .calendar{
+        width: 32em;
+        height: 20em;
+        margin-top: 1.5em;
+    }
+    
+    .weekdays div {
+        font-size: 1rem;
+        width: calc(30rem / 7);
+    }
+    
+    .days div {
+    font-size: 1em;
+    width: calc(30rem / 7);
+    }
+
+    .main-foto img{
+        width: 100%;
+        height: 20em;
+        border-radius: 5px;
+    }
+
+    .fotos{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    } 
+
+    .fotos img{
+        width: 100%;
+        margin: 0.2em;
+        padding: 0.3em;
+        height: 5em;
+        border-radius: 5px;
+    }
+
+    .text{
+        display: flex;
+    }
+
+   #info{
+        width: 100%;
+    }
+
+
+}

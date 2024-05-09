@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="nl-be">
+    <head>
+        <meta charset="utf-8">
+        <title>Hotel Harmoni &verbar; Kamers</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style_kamers.css">
+    </head>
+    <body>
+        <!--Header =============================================-->
+        <header id="header">
+            <div class="cotainer"> 
+                <div id="container-wrap">
+                    <div id="logo">
+                        <a href="index.html"><img src="images/logo.jpg" width="230"></a>
+                    </div>  
+                    <nav id="menu">
+                        <ul class="navigatie">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="kamers.html"class="active">Kamers</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav> 
+                </div>
+            </div>
+        </header>
+        <!--Main ================================================-->
+        <main>
+            <div>
+                <!--main-titel ================================================-->
+                <div class="main-info">
+                    <div class="container">
+                        <div class="center">
+                            <h1>Kamers & Suites</h1>
+                        </div>
+                    </div>
+                </div>
+                <!--filter functies ================================================-->
+                <div class="container">                
+                    <div class="datum-toevoegen">
+                        <div>
+                            <label for="inchecken">Inchecken:</label>
+                            <input type="date" id="inchecken" name="inchecken">
+                        </div>
+                        <div>
+                            <label for="uitchecken">Uitchecken:</label>
+                            <input type="date" id="uitchecken" name="uitchecken">
+                        </div>
+                        <button id="zoek">Zoek</button>
+                    </div>                           
+                    <div class="kamers">
+                        <ul>            
+                            <li><a href="#" id="all">All(6)</a></li> 
+                            <li><a  href="#" id="kamer">Kamers(4)</a></li>
+                            <li><a href="#" id="suite">Suites(2)</a></li> 
+                        </ul>
+                    </div>
+                </div>
+                <!--Soorten kamers================================================-->
+                <div class="container">       
+                        <div class="soorten-kamers"> <!--Kamers ================================================-->
+                            <div id="kamer1"> 
+                                <figure class="afbeelding">
+                                    <img src="images/kamer1.jpg" alt="Superior tweepersoonskamer">
+                                    <figcaption>
+                                        <h3>Superior tweepersoonskamer</h3>
+                                        <p><i class="fab fa-accessible-icon"></i> Toegankelijke kamer</p>
+                                        <p><i class="fas fa-user-friends"></i> x2</p>
+                                        <p><i class="far fa-image"></i> Uitzicht op de stad *</p>
+                                        <p>WiFi in de kamer</p>
+                                        <p><span>&euro; 90</span> per nacht</p>
+                                    </figcaption>
+                                </figure>
+                                <div class="meer-info">
+                                    <div class="info">
+                                        <a id="eersteKamer" href="info.html">Meer informatie <i class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                    <div class="boek-nu">
+                                        <a id="eersteKamer1" href="boeking.html">Boek nu</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="kamer2">
+                                <figure class="afbeelding">
+                                    <img src="images/kamer2.jpg" alt="Privilege tweepersoonskamer">
+                                    <figcaption>
+                                        <h3>Privilege tweepersoonskamer</h3>
+                                        <p><i class="fab fa-accessible-icon"></i> Toegankelijke kamer</p>
+                                        <p><i class="fas fa-user-friends"></i> x2</p>
+                                        <p>WiFi in de kamer</p>
+                                        <p><span>&euro; 60</span> per nacht</p>
+                                    </figcaption>
+                                </figure>
+                                <div class="meer-info">
+                                    <div class="info">
+                                        <a id="tweedeKamer" href="info.html">Meer informatie <i class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                    <div class="boek-nu">
+                                        <a id="tweedeKamer2" href="boeking.html">Boek nu</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="soorten-kamers">
+                            <div id="kamer3">
+                                <figure class="afbeelding">
+                                    <img src="images/kamer3.jpg" alt="Privilege kamer met uitzicht op de stad">
+                                    <figcaption>
+                                        <h3>Privilege kamer met uitzicht op de stad</h3>
+                                        <p><i class="fab fa-accessible-icon"></i> Toegankelijke kamer</p>
+                                        <p><i class="fas fa-user-friends"></i> x2</p>
+                                        <p><i class="far fa-image"></i> Uitzicht op de stad *</p>
+                                        <p>WiFi in de kamer</p>
+                                        <p><span>&euro; 115</span> per nacht</p>
+                                    </figcaption>
+                                </figure>
+                                <div class="meer-info">
+                                    <div class="info">
+                                        <a  id="derdeKamer" href="info.html">Meer informatie <i class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                    <div class="boek-nu">
+                                        <a id="derdeKamer3" href="boeking.html">Boek nu</a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        
+                            <div id="kamer4">
+                                <figure class="afbeelding">
+                                    <img src="images/kamer4.jpg" alt="Familie Kamer">
+                                    <figcaption>
+                                        <h3>Superior kamer met 1 eenpersoonsbed</h3>
+                                        <p><i class="fab fa-accessible-icon"></i> Toegankelijke kamer</p>
+                                        <p><i class="fas fa-user-friends"></i> x1</p>   
+                                        <p>WiFi in de kamer</p>
+                                        <p>Satelliet-tv/kabelkleuren-tv</p>
+                                        <p><span>&euro; 168</span> per nacht</p>
+                                    </figcaption>
+                                </figure>
+                                <div class="meer-info">
+                                    <div class="info">
+                                        <a  id="vierdeKamer" href="info.html">Meer informatie <i class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                    <div class="boek-nu">
+                                        <a id="vierdeKamer4" href="boeking.html">Boek nu</a>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="soorten-kamers">
+                            <div id="suite1"><!--Suites ================================================-->
+                                <figure class="afbeelding">
+                                    <img src="images/kamer5.jpg" alt="Deluxe Suite met een tweepersoosbed">
+                                    <figcaption>
+                                        <h3>Deluxe Suite met een tweepersoonsbed</h3>
+                                        <p><i class="fab fa-accessible-icon"></i> Toegankelijke kamer</p>
+                                        <p><i class="fas fa-user-friends"></i> x4</p>
+                                        <p>WiFi in de kamer</p>
+                                        <p><span>&euro; 150</span> per nacht</p>
+                                    </figcaption>
+                                </figure>
+                                <div class="meer-info">
+                                    <div class="info">
+                                        <a  id="vijfdeKamer" href="info.html">Meer informatie <i class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                    <div class="boek-nu">
+                                        <a  id="vijfdeKamer5" href="boeking.html">Boek nu</a>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div id="suite2"> 
+                                <figure class="afbeelding">
+                                    <img src="images/kamer6.jpg" alt="Executive Suite met een tweepersoonsbed en aparte zitkamer">
+                                    <figcaption>
+                                        <h3>Executive Suite met een tweepersoonsbed</h3>
+                                        <p><i class="fab fa-accessible-icon"></i> Toegankelijke kamer</p>
+                                        <p><i class="fas fa-user-friends"></i> x4</p>
+                                        <p><i class="far fa-image"></i> Uitzicht op de stad *</p>
+                                        <p>WiFi in de kamer</p>
+                                        <p><span>&euro; 155</span> per nacht</p>
+                                    </figcaption>
+                                </figure>
+                                <div class="meer-info">
+                                    <div class="info">
+                                        <a  id="zesdeKamer" href="info.html">Meer informatie <i class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                    <div class="boek-nu">
+                                        <a id="zesdeKamer6" href="boeking.html">Boek nu</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div> 
+        </main>
+        <!--Footer ================================================-->
+        <footer>
+            <div class="container footer-flex">
+                <div class="over">
+                    <h3>Over Hotel Harmonie</h3>
+                    <p>Hotel Harmonie is de juiste keuze voor bezoekers die op zoek zijn naar een combinatie van charme en een gunstige ligging om de omgeving te verkennen.</p>
+                </div>
+                <div class="contact">
+                    <h3>Contacten</h3>
+                    <address><i class="fas fa-map-marked-alt"></i> Kraanlei 37, 9000 Gent</address>
+                    <p><a href="mailto:info@harmonie.be">Email: info@harmonie.be</a></p>
+                    <p>Telefoon: 0498 76 67 44</p>
+                    <ul class="social">
+                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-pinterest-square"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Site Links</h3>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="kamers.html">Kamers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Geaccepteerde betalingsmethoden</h3>
+                    <ul class="betalingsmethoden">
+                        <li><i class="fab fa-paypal"></i></li>
+                        <li><i class="fab fa-cc-visa"></i></li>
+                        <li><i class="fab fa-cc-mastercard"></i></li>
+                        <li><i class="fab fa-cc-amex"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container footer-copyright">
+                <p>Copyright &copy; 2020</p>
+            </div>
+        </footer> 
+        <script src="javascript/script_kamers.js"></script>             
+    </body>
+</html>
